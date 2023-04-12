@@ -1,0 +1,25 @@
+spring:
+  profiles:
+    active: host
+  aop:
+    auto: true
+    proxy-target-class: true
+  jackson:
+    time-zone: GMT+8
+    date-format: yyyy-MM-dd HH:mm:ss
+
+server:
+  port: 48484
+
+
+kafka:
+  auth: false
+
+
+
+mybatis-plus:
+  configuration:
+    jdbc-type-for-null: 'null'
+    use-generated-keys: true
+  mapper-locations: classpath:mapper/*/*.xml
+  type-aliases-package: com.emdata.ivvs.model.dao
